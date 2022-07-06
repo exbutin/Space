@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: astro_space_font;
+  src: url(/AstroSpace-Font.otf);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  /* position: fixed; */
+  background-image: url(/Images/Star.png);
+  background-size: 17.5vw;
+  background-repeat: repeat;
+}
+
+/* button */
+.button {
+  text-align: center;
+  height: 25px;
+  width: 18vw;
+  font-family: astro_space_font;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  margin: 2.5vw;
+}
+
+/* navbar */
+
+.topnav {
+  background: #292c2c;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+
+.topnav_text {
+  width: 100px;
+  text-align: center;
+  color: #b0a1aa;
+  text-decoration: none;
+  font-size: 20;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5px;
+  border-bottom: #b0a1aa 0px solid;
+  transition: border-bottom 0.1s ease-in-out;
+}
+
+.logo {
+  height: 100%;
+  width: 60px;
+  background: url(/Images/shield-removebg-preview.png) no-repeat center
+    center/contain !important;
+}
+
+.topnav_text:hover {
+  border-bottom: #b0a1aa 5px solid;
+  transition: border-bottom 0.15s ease-in-out;
+}
+
+.active {
+  background: #b0a1aa;
+  color: #292c2c;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .topnav {
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .topnav_text {
+    height: 37.5px;
+    width: 100vw;
+    padding-top: 8.75px;
+  }
+  .logo {
+    display: none;
+  }
+
+  .topnav_text:hover {
+    border-bottom: 0px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .active {
+    background: #b0a1aa;
+    color: #292c2c;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+/* grids */
+.grid_2_column {
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  justify-content: center;
+  justify-items: center;
+  border: none;
+}
+
+.grid_4_column {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  justify-content: center;
+  justify-items: center;
+  border: none;
+}
+
+.ship_grid {
+  padding: 5vw;
+}
+
+.hide {
+  display: none;
+}
+
+.card_img {
+  display: flex;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.kingdom_card {
+  width: inherit;
+  height: 100%;
+}
+
+.button:hover {
+  cursor: pointer;
+}

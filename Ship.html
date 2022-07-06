@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/Images/dominion-2ed.png"
+      type="image/x-icon"
+    />
+    <script src="JS/turly_random.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>SHIP RANDOM</title>
+  </head>
+
+  <body onload="update_ships()">
+    <div class="grid_4_column">
+      <a href="/index.html" class="button">Home</a>
+      <a href="/Resource.html" class="button">Resource Randomizer</a>
+      <a onclick="intialize(); true_random(); update_ships()" class="button">Truly Random</a>
+      <a onclick="intialize(); distributed_random(); update_ships()" class="button">Distributed Random</a>
+    </div>
+
+    <div class="grid_2_column ship_grid">
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="Tip 1"
+        class="kingdom_card card_img"
+        id="tip_1"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="Tip 2"
+        class="kingdom_card card_img"
+        id="tip_2"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="adapter 1"
+        class="kingdom_card card_img"
+        id="adapter_1"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="adapter 2"
+        class="kingdom_card card_img"
+        id="adapter_2"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="mid 1"
+        class="kingdom_card card_img"
+        id="mid_1"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="mid 2"
+        class="kingdom_card card_img"
+        id="mid_2"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="mid 3"
+        class="kingdom_card card_img"
+        id="mid_3"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="mid 4"
+        class="kingdom_card card_img"
+        id="mid_4"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="engine 1"
+        class="kingdom_card card_img"
+        id="engine_1"
+      /></figure>
+      <figure class="kingdom_figure">
+        <img
+        src=""
+        alt="engine 2"
+        class="kingdom_card card_img"
+        id="engine_2"
+      />
+    </div>
+  </body>
+</html>
