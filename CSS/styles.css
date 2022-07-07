@@ -22,7 +22,7 @@ body {
 .button {
   text-align: center;
   height: 25px;
-  width: 18vw;
+  width: 40vw;
   font-family: astro_space_font;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 0.35);
@@ -31,6 +31,18 @@ body {
   font-family: "Roboto", sans-serif;
   border-radius: 20px;
   margin: 2.5vw;
+}
+
+.header {
+  text-align: center;
+  height: 25px;
+  width: 100vw;
+  font-family: astro_space_font;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* navbar */
@@ -142,10 +154,29 @@ body {
 }
 
 .kingdom_card {
-  width: inherit;
+  width: 45vw;
   height: 100%;
 }
 
 .button:hover {
   cursor: pointer;
+}
+
+.resource_card {
+  width: 45vw;
+  height: 100%;
+}
+
+.resource_button {
+  text-align: center;
+  height: 25px;
+  width: 43vw;
+  font-family: astro_space_font;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  /* border-radius: 20px; */
+  margin: 2.5vw;
 }

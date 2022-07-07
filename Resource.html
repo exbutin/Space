@@ -20,13 +20,58 @@
     <title>SHIP RANDOM</title>
   </head>
 
-  <body onload="update_ships()">
-    <div class="grid_4_column">
+  <body onload="update_resources()">
+    <div class="grid_2_column">
       <a href="/index.html" class="button">Home</a>
       <a href="/Ship.html" class="button">Ship Randomizer</a>
-      <a onclick="intialize(); true_random(); update_ships()" class="button"
+      <a
+        onclick="intialize_resources(); true_random_resources(); update_resources()"
+        class="button"
         >Randomize</a
       >
+    </div>
+
+    <div class="grid_2_column ship_grid">
+      <button class="resource_button">Jupiter</button>
+      <button class="resource_button">Hygiea</button>
+      <figure class="resource_figure">
+        <img src="" alt="Jupiter" class="resource_card card_img" id="jupiter" />
+      </figure>
+      <figure class="resource_figure">
+        <img src="" alt="Hygiea" class="resource_card card_img" id="hygiea" />
+      </figure>
+
+      <a class="resource_button">Pallas</a>
+      <a class="resource_button">Ceres</a>
+      <figure class="resource_figure">
+        <img src="" alt="Pallas" class="resource_card card_img" id="pallas" />
+      </figure>
+      <figure class="resource_figure">
+        <img src="" alt="Ceres" class="resource_card card_img" id="ceres" />
+      </figure>
+
+      <a class="resource_button">Phobos & Deimos</a>
+      <a class="resource_button">Mars</a>
+      <figure class="resource_figure">
+        <img
+          src=""
+          alt="Phobos & Deimos"
+          class="resource_card card_img"
+          id="phobos"
+        />
+      </figure>
+      <figure class="resource_figure">
+        <img src="" alt="Mars" class="resource_card card_img" id="mars" />
+      </figure>
+
+      <a class="resource_button">Mercury</a>
+      <a class="resource_button">Venus</a>
+      <figure class="resource_figure">
+        <img src="" alt="Mercury" class="resource_card card_img" id="mercury" />
+      </figure>
+      <figure class="resource_figure">
+        <img src="" alt="Venus" class="resource_card card_img" id="venus" />
+      </figure>
     </div>
   </body>
 </html>

@@ -23,7 +23,7 @@ function shuffle(array) {
   return array;
 }
 
-function intialize() {
+function intialize_ships() {
   //set array
   const tip = [
     "/Images/Ship Cards DARK_01.jpg",
@@ -108,7 +108,7 @@ function intialize() {
   localStorage.setItem("small_engine_array", JSON.stringify(small_engine));
 }
 
-function true_random() {
+function true_random_ships() {
   localStorage.setItem(
     "tip_array",
     JSON.stringify(shuffle(JSON.parse(localStorage.getItem("tip_array_base"))))
@@ -131,7 +131,7 @@ function true_random() {
   );
 }
 
-function distributed_random() {
+function distributed_random_ships() {
   let adapter = shuffle(JSON.parse(localStorage.getItem("adapter_array_base")));
   let large_tip = shuffle(JSON.parse(localStorage.getItem("large_tip_array")));
   let large_mid = shuffle(JSON.parse(localStorage.getItem("large_mid_array")));
@@ -192,4 +192,64 @@ function update_ships() {
   document.querySelector("#engine_2").src = JSON.parse(
     localStorage.getItem("engine_array")
   )[1];
+}
+
+//resources
+function intialize_resources() {
+  //set array
+  const resources = [
+    "/Images/Resource Cards_01.jpg",
+    "/Images/Resource Cards_02.jpg",
+    "/Images/Resource Cards_03.jpg",
+    "/Images/Resource Cards_04.jpg",
+    "/Images/Resource Cards_05.jpg",
+    "/Images/Resource Cards_06.jpg",
+    "/Images/Resource Cards_07.jpg",
+    "/Images/Resource Cards_08.jpg",
+    "/Images/Resource Cards_09.jpg",
+    "/Images/Resource Cards_10.jpg",
+    "/Images/Resource Cards_11.jpg",
+    "/Images/Resource Cards_12.jpg",
+    "/Images/Resource Cards_13.jpg",
+    "/Images/Resource Cards_14.jpg",
+  ];
+
+  //add to local
+  localStorage.setItem("resource_array_base", JSON.stringify(resources));
+}
+
+function true_random_resources() {
+  localStorage.setItem(
+    "resource_array",
+    JSON.stringify(
+      shuffle(JSON.parse(localStorage.getItem("resource_array_base")))
+    )
+  );
+}
+
+function update_resources() {
+  document.querySelector("#jupiter").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[0];
+  document.querySelector("#hygiea").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[1];
+  document.querySelector("#pallas").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[2];
+  document.querySelector("#ceres").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[3];
+  document.querySelector("#phobos").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[4];
+  document.querySelector("#mars").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[5];
+  document.querySelector("#mercury").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[6];
+  document.querySelector("#venus").src = JSON.parse(
+    localStorage.getItem("resource_array")
+  )[7];
 }
