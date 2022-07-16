@@ -234,6 +234,8 @@ function true_random_resources() {
 }
 
 function update_resources() {
+  document.getElementById("resource_div").style.display = "grid";
+
   document.querySelector("#jupiter").src = JSON.parse(
     localStorage.getItem("resource_array")
   )[0];
@@ -258,4 +260,22 @@ function update_resources() {
   document.querySelector("#venus").src = JSON.parse(
     localStorage.getItem("resource_array")
   )[7];
+
+  if ((resources_Array.length = 0)) {
+    document.getElementById("resource_div").style.display = "none";
+  }
 }
+
+// function expand() {
+//   var game_id = document.getElementById("space_age");
+//   var header_id = document.getElementById("space_age_header");
+
+//   if (game_id.style.display == "none") {
+//     game_id.style.display = "grid";
+//     header_id.style.borderBottomLeftRadius = "0vw";
+//     header_id.style.borderBottomRightRadius = "0vw";
+//   } else {
+//     game_id.style.display = "none";
+//     header_id.style.borderRadius = "2.5vw";
+//   }
+// }

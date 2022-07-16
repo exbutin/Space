@@ -69,6 +69,7 @@ const small_mid = [
   "/Images/Ship Cards DARK_11.jpg",
   "/Images/Ship Cards DARK_12.jpg",
 ];
+
 //Functions
 function shuffle(array) {
   let currentIndex = array.length,

@@ -84,6 +84,11 @@ body {
   cursor: pointer;
 }
 
+.tertiary_button {
+  margin-left: 3vw;
+  width: 92.5vw;
+}
+
 .header {
   box-sizing: content-box;
   display: flex;
@@ -133,6 +138,7 @@ body {
   justify-content: center;
   align-content: center;
   border: none;
+  margin: none;
 }
 
 .ship_grid {
@@ -199,4 +205,10 @@ body {
 
 .dark {
   border-color: rgba(255, 255, 255, 0.65);
+}
+
+.sub_header {
+  pointer-events: none;
+  border-bottom-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
 }
