@@ -23,13 +23,13 @@ body {
 .secondary_button {
   text-align: center;
   height: 5vw;
-  width: 97vw;
+  width: 96vw;
   background-color: rgba(255, 255, 255, 0.35);
   text-decoration: none;
   border-radius: 1vw;
   margin-top: 1vw;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   font-size: 2.75vw;
   line-height: 5vw;
 
@@ -63,7 +63,6 @@ body {
 
   background-color: rgba(255, 255, 255, 0.35);
   border-radius: 1vw;
-  border: none;
   border-top: rgba(255, 255, 255, 0.35) 0vw solid;
   border-bottom: rgba(255, 255, 255, 0.35) 0vw solid;
   transition: border-top 0.5s ease-in-out, border-bottom 0.5s ease-in-out,
@@ -92,7 +91,9 @@ body {
   align-items: center;
   align-items: center;
   height: 10vw;
-  width: 97vw;
+  width: 98vw;
+  margin: 1vw;
+  margin-bottom: 0vw;
 
   font-size: 6vw;
 
@@ -158,10 +159,11 @@ body {
 }
 
 .smaller {
-  width: 46.17vw;
+  width: 47vw;
   height: 5vw;
   font-size: 3vw;
   background-color: rgba(255, 255, 255, 0.35);
+  margin-left: 1vw;
 }
 
 .resource {
@@ -173,18 +175,21 @@ body {
 }
 
 .space {
-  margin: 2.5vw;
+  margin: 1vw;
 }
 
 .border {
   border: 0.5vw solid rgba(255, 255, 255, 0.35);
   margin: 1vw;
+  margin-top: 0vw;
   padding-bottom: 2vw;
-  border-radius: 3.15vw;
+  border-bottom-left-radius: 3.15vw;
+  border-bottom-right-radius: 3.15vw;
 }
 
 .resource_border {
   border: 0.5vw solid rgba(255, 255, 255, 0.35);
+  border-top: none;
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.35);
   margin: 1vw;
@@ -192,6 +197,6 @@ body {
   border-radius: 3.15vw;
 }
 
-.dark_border {
+.dark {
   border-color: rgba(255, 255, 255, 0.65);
 }
