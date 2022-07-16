@@ -266,32 +266,32 @@ function update_resources() {
   }
 }
 
-// function expand(div_id, header_id) {
-//   var body = document.getElementById(div_id);
-//   var header = document.getElementById(header_id);
+function expand(div_id: String, header_id: String) {
+  var body = document.getElementById(div_id);
+  var header = document.getElementById(header_id);
 
-//   if (game_id.style.display == "none") {
-//     body.style.display = "grid";
-//     header.style.borderBottomLeftRadius = "0vw";
-//     header.style.borderBottomRightRadius = "0vw";
-//   } else {
-//     body.style.display = "none";
-//     header.style.borderRadius = "2.5vw";
-//   }
-// }
-
-function expand_options() {
-  console.log("worked");
-
-  var button_secondary = document.getElementById("ship_randomize_options");
-  var button_main = document.getElementById("ship_randomize_header");
-
-  if (button_secondary.style.display == "none") {
-    button_secondary.style.display = "grid";
-    button_main.style.borderBottomLeftRadius = "0vw";
-    button_main.style.borderBottomRightRadius = "0vw";
+  if (game_id.style.display == "none") {
+    body.style.display = "grid";
+    header.style.borderBottomLeftRadius = "0vw";
+    header.style.borderBottomRightRadius = "0vw";
   } else {
-    button_secondary.style.display = "none";
-    button_main.style.borderRadius = "2.5vw";
+    body.style.display = "none";
+    header.style.borderRadius = "2.5vw";
   }
 }
+
+// function expand_options() {
+//   console.log("worked");
+
+//   var button_secondary = document.getElementById("ship_randomize_options");
+//   var button_main = document.getElementById("ship_randomize_header");
+
+//   if (button_secondary.style.display == "none") {
+//     button_secondary.style.display = "grid";
+//     button_main.style.borderBottomLeftRadius = "0vw";
+//     button_main.style.borderBottomRightRadius = "0vw";
+//   } else {
+//     button_secondary.style.display = "none";
+//     button_main.style.borderRadius = "1.5vw";
+//   }
+// }
