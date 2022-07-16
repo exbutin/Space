@@ -10,7 +10,7 @@
       href="/Images/dominion-2ed.png"
       type="image/x-icon"
     />
-    <script src="JS/turly_random.js"></script>
+    <script src="JS/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,11 +29,12 @@
         >Ship Randomizer</a
       >
       <div class="space"></div>
-      <a
-        onclick="intialize_resources(); true_random_resources(); update_resources()"
-        class="secondary_button astro_font dark"
-        >Randomize</a
-      >
+
+      <div class="grid_1_column">
+        <a onclick="expand('ship_randomize_options', 'ship_randomize_header')" class="sub_header astro_font" id="ship_randomize_header">Randomize Resources</a>
+        <div class="grid_1_column border" id="ship_randomize_options">
+        <a onclick="initialize_resources(); true_random_resources(); update_resources()" class="secondary_button tertiary_button astro_font dark hover">Truly Random</a>
+      </div>
     </div>
 
     <div class="grid_1_column">

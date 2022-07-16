@@ -1,29 +1,10 @@
 // Query
+"use strict";
+import { shuffle, expand } from "./main.js";
 // Arrays
 //all
 
-//Functions
-function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
-
-  // While there remain elements to shuffle.
-  while (currentIndex != 0) {
-    // Pick a remaining element.
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-
-  return array;
-}
-
-function intialize_ships() {
+function initialize_ships() {
   //set array
   const tip = [
     "/Images/Ship Cards DARK_01.jpg",
@@ -199,99 +180,3 @@ function update_ships() {
     document.getElementById("ship_div").style.display = "none";
   }
 }
-
-//resources
-function intialize_resources() {
-  //set array
-  const resources = [
-    "/Images/Resource Cards_01.jpg",
-    "/Images/Resource Cards_02.jpg",
-    "/Images/Resource Cards_03.jpg",
-    "/Images/Resource Cards_04.jpg",
-    "/Images/Resource Cards_05.jpg",
-    "/Images/Resource Cards_06.jpg",
-    "/Images/Resource Cards_07.jpg",
-    "/Images/Resource Cards_08.jpg",
-    "/Images/Resource Cards_09.jpg",
-    "/Images/Resource Cards_10.jpg",
-    "/Images/Resource Cards_11.jpg",
-    "/Images/Resource Cards_12.jpg",
-    "/Images/Resource Cards_13.jpg",
-    "/Images/Resource Cards_14.jpg",
-  ];
-
-  //add to local
-  localStorage.setItem("resource_array_base", JSON.stringify(resources));
-}
-
-function true_random_resources() {
-  localStorage.setItem(
-    "resource_array",
-    JSON.stringify(
-      shuffle(JSON.parse(localStorage.getItem("resource_array_base")))
-    )
-  );
-}
-
-function update_resources() {
-  document.getElementById("resource_div").style.display = "grid";
-
-  document.querySelector("#jupiter").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[0];
-  document.querySelector("#hygiea").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[1];
-  document.querySelector("#pallas").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[2];
-  document.querySelector("#ceres").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[3];
-  document.querySelector("#phobos").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[4];
-  document.querySelector("#mars").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[5];
-  document.querySelector("#mercury").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[6];
-  document.querySelector("#venus").src = JSON.parse(
-    localStorage.getItem("resource_array")
-  )[7];
-
-  if ((resources_Array.length = 0)) {
-    document.getElementById("resource_div").style.display = "none";
-  }
-}
-
-function expand(div_id: String, header_id: String) {
-  var body = document.getElementById(div_id);
-  var header = document.getElementById(header_id);
-
-  if (game_id.style.display == "none") {
-    body.style.display = "grid";
-    header.style.borderBottomLeftRadius = "0vw";
-    header.style.borderBottomRightRadius = "0vw";
-  } else {
-    body.style.display = "none";
-    header.style.borderRadius = "2.5vw";
-  }
-}
-
-// function expand_options() {
-//   console.log("worked");
-
-//   var button_secondary = document.getElementById("ship_randomize_options");
-//   var button_main = document.getElementById("ship_randomize_header");
-
-//   if (button_secondary.style.display == "none") {
-//     button_secondary.style.display = "grid";
-//     button_main.style.borderBottomLeftRadius = "0vw";
-//     button_main.style.borderBottomRightRadius = "0vw";
-//   } else {
-//     button_secondary.style.display = "none";
-//     button_main.style.borderRadius = "1.5vw";
-//   }
-// }
