@@ -35,8 +35,8 @@ body {
 
   border-left: rgba(255, 255, 255, 0.35) 0vw solid;
   border-right: rgba(255, 255, 255, 0.35) 0vw solid;
-  transition: border-left 0.5s ease-in-out, border-right 0.5s ease-in-out,
-    color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: border-left 0.25s ease-in-out, border-right 0.25s ease-in-out,
+    color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 
 .secondary_button:hover {
@@ -65,8 +65,8 @@ body {
   border-radius: 1vw;
   border-top: rgba(255, 255, 255, 0.35) 0vw solid;
   border-bottom: rgba(255, 255, 255, 0.35) 0vw solid;
-  transition: border-top 0.5s ease-in-out, border-bottom 0.5s ease-in-out,
-    color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: border-top 0.25s ease-in-out, border-bottom 0.25s ease-in-out,
+    color 0.25s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .main_button:hover {
