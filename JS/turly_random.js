@@ -155,6 +155,8 @@ function distributed_random_ships() {
 }
 
 function update_ships() {
+  document.getElementById("ship_div").style.display = "grid";
+
   //tips
   document.querySelector("#tip_1").src = JSON.parse(
     localStorage.getItem("tip_array")
@@ -192,6 +194,10 @@ function update_ships() {
   document.querySelector("#engine_2").src = JSON.parse(
     localStorage.getItem("engine_array")
   )[1];
+
+  if ((tip_Array.length = 0)) {
+    document.getElementById("ship_div").style.display = "none";
+  }
 }
 
 //resources

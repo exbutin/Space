@@ -22,27 +22,38 @@
 
   <body onload="update_resources()">
     <div class="grid_2_column">
-      <a href="/index.html" class="button">Home</a>
-      <a href="/Ship.html" class="button">Ship Randomizer</a>
+      <a href="/index.html" class="secondary_button astro_font">Home</a>
+      <a href="/Ship.html" class="secondary_button astro_font"
+        >Ship Randomizer</a
+      >
       <a
         onclick="intialize_resources(); true_random_resources(); update_resources()"
-        class="button"
+        class="secondary_button astro_font"
         >Randomize</a
       >
     </div>
 
-    <div class="grid_2_column ship_grid">
-      <button class="resource_button">Jupiter</button>
-      <button class="resource_button">Hygiea</button>
-      <figure class="resource_figure">
-        <img src="" alt="Jupiter" class="resource_card card_img" id="jupiter" />
-      </figure>
-      <figure class="resource_figure">
-        <img src="" alt="Hygiea" class="resource_card card_img" id="hygiea" />
-      </figure>
+    <div class="grid_2_column" style="grid-gap: 1vw">
+      <div class="gid_1_column border">
+        <button class="secondary_button astro_font resource">Jupiter</button>
+        <figure class="resource_figure">
+          <img
+            src=""
+            alt="Jupiter"
+            class="resource_card card_img"
+            id="jupiter"
+          />
+        </figure>
+      </div>
+      <div class="gid_1_column border">
+        <button class="secondary_button astro_font resource">Hygiea</button>
+        <figure class="resource_figure">
+          <img src="" alt="Hygiea" class="resource_card card_img" id="hygiea" />
+        </figure>
+      </div>
 
-      <a class="resource_button">Pallas</a>
-      <a class="resource_button">Ceres</a>
+      <a class="secondary_button astro_font resource">Pallas</a>
+      <a class="secondary_button astro_font resource">Ceres</a>
       <figure class="resource_figure">
         <img src="" alt="Pallas" class="resource_card card_img" id="pallas" />
       </figure>
@@ -50,8 +61,8 @@
         <img src="" alt="Ceres" class="resource_card card_img" id="ceres" />
       </figure>
 
-      <a class="resource_button">Phobos & Deimos</a>
-      <a class="resource_button">Mars</a>
+      <a class="secondary_button astro_font resource">Phobos & Deimos</a>
+      <a class="secondary_button astro_font resource">Mars</a>
       <figure class="resource_figure">
         <img
           src=""
@@ -64,8 +75,8 @@
         <img src="" alt="Mars" class="resource_card card_img" id="mars" />
       </figure>
 
-      <a class="resource_button">Mercury</a>
-      <a class="resource_button">Venus</a>
+      <a class="secondary_button astro_font resource">Mercury</a>
+      <a class="secondary_button astro_font resource">Venus</a>
       <figure class="resource_figure">
         <img src="" alt="Mercury" class="resource_card card_img" id="mercury" />
       </figure>

@@ -22,13 +22,15 @@
 
   <body onload="update_ships()">
     <div class="grid_2_column">
-      <a href="/index.html" class="button">Home</a>
-      <a href="/Resource.html" class="button">Resource Randomizer</a>
-      <a onclick="intialize_ships(); true_random_ships(); update_ships()" class="button">Truly Random</a>
-      <a onclick="intialize_ships(); distributed_random_ships(); update_ships()" class="button">Distributed Random</a>
+      <a href="/index.html" class="secondary_button  astro_font">Home</a>
+      <a href="/Resource.html" class="secondary_button  astro_font">Resource Randomizer</a>
+      <a onclick="intialize_ships(); true_random_ships(); update_ships()" class="secondary_button  astro_font">Truly Random</a>
+      <a onclick="intialize_ships(); distributed_random_ships(); update_ships()" class="secondary_button astro_font">Distributed Random</a>
     </div>
 
-    <div class="grid_2_column ship_grid">
+    <div class="space"></div>
+
+    <div class="grid_2_column ship_grid" id="ship_div">
       <figure class="kingdom_figure">
         <img
         src=""
