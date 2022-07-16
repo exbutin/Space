@@ -85,8 +85,8 @@ body {
 }
 
 .tertiary_button {
-  margin-left: 3vw;
-  width: 92.5vw;
+  margin-left: 2.5vw;
+  width: 93vw;
 }
 
 .header {
@@ -188,7 +188,7 @@ body {
   border: 0.5vw solid rgba(255, 255, 255, 0.35);
   margin: 1vw;
   margin-top: 0vw;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
   border-bottom-left-radius: 3.15vw;
   border-bottom-right-radius: 3.15vw;
 }

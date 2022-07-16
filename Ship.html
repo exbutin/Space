@@ -22,17 +22,23 @@
 
   <body onload="update_ships()">
     
-    <div class="space"></div>
+    <div class="space" ></div>
 
-    <div class="grid_1_column">
-      <a href="/index.html" class="secondary_button astro_font">Home</a>
-      <a href="/Resource.html" class="secondary_button  astro_font">Resource Randomizer</a>
-      <div class="space"></div>
-      <a class="secondary_button sub_header astro_font">Randomize Modules</a>
-      <div class="grid_1_column border">
-      <a onclick="intialize_ships(); true_random_ships(); update_ships()" class="secondary_button tertiary_button astro_font dark">Truly Random</a>
-      <a onclick="intialize_ships(); distributed_random_ships(); update_ships()" class="secondary_button tertiary_button astro_font dark">Distributed Random</a>
+
+      <div class="grid_1_column">
+        <a href="/index.html" class="secondary_button astro_font">Home</a>
+        <a href="/Resource.html" class="secondary_button astro_font">Resource Randomizer</a>
       </div>
+
+      <div class="space"></div>
+      
+      <div class="grid_1_column">
+        <a onclick="expand_options()" class="secondary_button sub_header astro_font" id="ship_randomize_header">Randomize Modules</a>
+        <div class="grid_1_column border" id="ship_randomize_options">
+        <a onclick="intialize_ships(); true_random_ships(); update_ships()" class="secondary_button tertiary_button astro_font dark">Truly Random</a>
+        <a onclick="intialize_ships(); distributed_random_ships(); update_ships()" class="secondary_button tertiary_button astro_font dark">Distributed Random</a>
+      </div>
+
     </div>
 
     <div class="grid_1_column">
