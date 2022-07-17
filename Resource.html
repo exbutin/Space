@@ -17,10 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>SHIP RANDOM</title>
+    <title>SPACE AGE - Resource Randomizer</title>
   </head>
 
-  <body onload="update_resources()">
+  <body onload="update_resources()" style="background-size:135vw">
     <div class="space"></div>
 
     <div class="grid_1_column">
@@ -31,14 +31,13 @@
       <div class="space"></div>
 
       <div class="grid_1_column">
-        <a onclick="expand('ship_randomize_options', 'ship_randomize_header')" class="sub_header astro_font" id="ship_randomize_header">Randomize Resources</a>
-        <div class="grid_1_column border" id="ship_randomize_options">
+        <a onclick="expand('ship_randomize_options', 'ship_randomize_header')" class="sub_header astro_font orange_background" id="ship_randomize_header">Randomize Resources</a>
+        <div class="grid_1_column border orange_border" id="ship_randomize_options">
         <a onclick="initialize_resources(); true_random_resources(); update_resources()" class="secondary_button tertiary_button astro_font dark hover">Truly Random</a>
       </div>
     </div>
 
     <div class="grid_1_column">
-      <div class="space"></div>
       <div class="space"></div>
     </div>
 

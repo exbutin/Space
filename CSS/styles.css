@@ -222,3 +222,11 @@ body {
   border-bottom-left-radius: 0vw;
   border-bottom-right-radius: 0vw;
 }
+
+.orange_border {
+  border-color: rgba(253, 181, 94, 0.35);
+}
+
+.orange_background {
+  background-color: rgba(253, 181, 94, 0.35);
+}
