@@ -122,71 +122,65 @@ function update_resources() {
 function initialize_ships() {
   //set array
   const tip = [
-    "/Images/Ship Cards DARK_01.jpg",
-    "/Images/Ship Cards DARK_02.jpg",
-    "/Images/Ship Cards DARK_03.jpg",
-    "/Images/Ship Cards DARK_04.jpg",
+    "/Images/Ship Cards_01.jpg",
+    "/Images/Ship Cards_02.jpg",
+    "/Images/Ship Cards_03.jpg",
+    "/Images/Ship Cards_04.jpg",
   ];
 
   const adapter = [
-    "/Images/Ship Cards DARK_17.jpg",
-    "/Images/Ship Cards DARK_18.jpg",
-    "/Images/Ship Cards DARK_19.jpg",
-    "/Images/Ship Cards DARK_20.jpg",
+    "/Images/Ship Cards_17.jpg",
+    "/Images/Ship Cards_18.jpg",
+    "/Images/Ship Cards_19.jpg",
+    "/Images/Ship Cards_20.jpg",
   ];
 
   const engine = [
-    "/Images/Ship Cards DARK_05.jpg",
-    "/Images/Ship Cards DARK_06.jpg",
-    "/Images/Ship Cards DARK_07.jpg",
-    "/Images/Ship Cards DARK_08.jpg",
+    "/Images/Ship Cards_05.jpg",
+    "/Images/Ship Cards_06.jpg",
+    "/Images/Ship Cards_07.jpg",
+    "/Images/Ship Cards_08.jpg",
   ];
 
   const mid = [
-    "/Images/Ship Cards DARK_09.jpg",
-    "/Images/Ship Cards DARK_10.jpg",
-    "/Images/Ship Cards DARK_11.jpg",
-    "/Images/Ship Cards DARK_12.jpg",
-    "/Images/Ship Cards DARK_13.jpg",
-    "/Images/Ship Cards DARK_14.jpg",
-    "/Images/Ship Cards DARK_15.jpg",
-    "/Images/Ship Cards DARK_16.jpg",
+    "/Images/Ship Cards_09.jpg",
+    "/Images/Ship Cards_10.jpg",
+    "/Images/Ship Cards_11.jpg",
+    "/Images/Ship Cards_12.jpg",
+    "/Images/Ship Cards_13.jpg",
+    "/Images/Ship Cards_14.jpg",
+    "/Images/Ship Cards_15.jpg",
+    "/Images/Ship Cards_16.jpg",
   ];
 
   //large
-  const large_tip = [
-    "/Images/Ship Cards DARK_03.jpg",
-    "/Images/Ship Cards DARK_04.jpg",
-  ];
+  const large_tip = ["/Images/Ship Cards_03.jpg", "/Images/Ship Cards_04.jpg"];
 
   const large_engine = [
-    "/Images/Ship Cards DARK_05.jpg",
-    "/Images/Ship Cards DARK_06.jpg",
+    "/Images/Ship Cards_05.jpg",
+    "/Images/Ship Cards_06.jpg",
   ];
 
   const large_mid = [
-    "/Images/Ship Cards DARK_13.jpg",
-    "/Images/Ship Cards DARK_14.jpg",
-    "/Images/Ship Cards DARK_15.jpg",
-    "/Images/Ship Cards DARK_16.jpg",
+    "/Images/Ship Cards_13.jpg",
+    "/Images/Ship Cards_14.jpg",
+    "/Images/Ship Cards_15.jpg",
+    "/Images/Ship Cards_16.jpg",
   ];
 
   //small
-  const small_tip = [
-    "/Images/Ship Cards DARK_01.jpg",
-    "/Images/Ship Cards DARK_02.jpg",
-  ];
+  const small_tip = ["/Images/Ship Cards_01.jpg", "/Images/Ship Cards_02.jpg"];
 
   const small_engine = [
-    "/Images/Ship Cards DARK_07.jpg",
-    "/Images/Ship Cards DARK_08.jpg",
+    "/Images/Ship Cards_07.jpg",
+    "/Images/Ship Cards_08.jpg",
   ];
 
   const small_mid = [
-    "/Images/Ship Cards DARK_09.jpg",
-    "/Images/Ship Cards DARK_10.jpg",
-    "/Images/Ship Cards DARK_11.jpg",
-    "/Images/Ship Cards DARK_12.jpg",
+    "/Images/Ship Cards_09.jpg",
+    "/Images/Ship Cards_10.jpg",
+    "/Images/Ship Cards_11.jpg",
+    "/Images/Ship Cards_12.jpg",
   ];
 
   //add to local
